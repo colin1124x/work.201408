@@ -1,4 +1,7 @@
 
 .idea
-.swp
+*.swp
+composer.lock
+.DS_Store
+Thumbs.db
 
