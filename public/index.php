@@ -48,10 +48,6 @@ require __DIR__.'/../bootstrap/autoload.php';
 try {
     $app->run();
 } catch (\Exception $e) {
-    mail(
-        'colin1124x@gmail.com',
-        $e->getMessage(),
-        $e->getTraceAsString()
-    );
+    die($e->getMessage());
 }
 
