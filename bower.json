@@ -1,0 +1,10 @@
+{
+    "name": "my-web",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": null,
+        "requirejs": null,
+        "alertify": null,
+        "pathjs": null
+    }
+}
