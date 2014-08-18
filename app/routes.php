@@ -15,8 +15,3 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
-
-Route::get('colin', function()
-{
-    return '<pre>'.print_r($_SERVER, true);
-});
