@@ -45,9 +45,5 @@ require __DIR__.'/../bootstrap/autoload.php';
 | and wonderful application we have whipped up for them.
 |
 */
-try {
-    $app->run();
-} catch (\Exception $e) {
-    die($e->getMessage());
-}
 
+    $app->run();
