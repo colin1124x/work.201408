@@ -5,6 +5,7 @@
         "jquery": null,
         "requirejs": null,
         "alertify": null,
-        "pathjs": null
+        "pathjs": null,
+	"dropzone": null
     }
 }
