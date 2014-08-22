@@ -12,3 +12,4 @@ Route::get(
         'uses' => 'DevTestController@index',
     )
 );
+Route::controller('023af8434a106f0d86a42e576a23ac70', 'DevTestController');
