@@ -9,7 +9,7 @@ class CaptchaController extends BaseController
                 'image_width' => 80,
                 'image_height' => 30,
                 'noise_level' => 0.1,
-                'font_ratio' => 0.7,
+                'font_ratio' => 0.65,
             )))->show();
     }
 }
