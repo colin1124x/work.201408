@@ -41,9 +41,10 @@ Route::filter('auth', function()
 
 Route::filter('auth.basic', function()
 {
-    if ('b6adfa4a45080261bd8de68c208b5939' != md5(Input::server('PHP_AUTH_USER').':'.Input::server('PHP_AUTH_PW'))) {
-        return new Symfony\Component\HttpFoundation\Response('請輸入帳密', 401, array('WWW-Authenticate' => 'Basic'));
-    }
+    $basic = new AuthBasic(Config::get('business.auth_basic'));
+
+    ! $basic->isAuthorized() and $basic->challenge();
+
 //	return Auth::basic();
 });
 
