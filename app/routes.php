@@ -7,14 +7,8 @@ Route::get('/', function()
 
 Route::group(array('before' => 'auth.basic'), function(){
 
-    Route::get(
-        '023af8434a106f0d86a42e576a23ac70',
-        array(
-            'as' => 'dev',
-            'uses' => 'DevTestController@index',
-        )
-    );
-    Route::controller('023af8434a106f0d86a42e576a23ac70', 'DevTestController');
+    Route::get('dev', 'DevTestController@index');
+    Route::controller('dev', 'DevTestController');
 });
 
 // demos
